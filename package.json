@@ -1,7 +1,6 @@
 {
-    "name": "typed-jsonfile",
-    "version": "0.1.2",
-    "repository": "https://github.com/zardoy/json-files.git",
+    "name": "repos-json",
+    "version": "0.0.0-dev",
     "author": "Vitaly Turovsky <vital2580@icloud.com>",
     "license": "MIT",
     "scripts": {
