@@ -12,6 +12,7 @@ export const getUserReposJson = async (user: string, normalize = true): Promise<
     let { body: reposJson } = await got<ReposJson>(`https://cdn.jsdelivr.net/gh/${user}/${user}/repos.json`, {
         responseType: 'json',
     })
+    if (!normalize) reposJson
     reposJson = Object.fromEntries(
         Object.entries(reposJson).map(([category, { repos, ...rest }]) => [
             category,
